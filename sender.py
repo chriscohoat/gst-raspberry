@@ -49,10 +49,13 @@ TCPcommand_libcamera = "libcamera-vid --width {0} --height {1} --framerate {2} -
 
 if protocol == "TCP":
     print("Trying to send through TCP pipe...")
-    os.system(TCPcommand_libcamera.format(width, height, FPS,
-              bitrate, localIP, port, quality))
-
+    command = TCPcommand_libcamera.format(
+        width, height, FPS, bitrate, localIP, port, quality)
+    print(command)
+    os.system(command)
 elif protocol == "UDP":
     print("Trying to send through UDP pipe...")
-    os.system(UDPcommand_libcamera.format(width, height, FPS,
-              bitrate, remoteIP, port, quality))
+    command = UDPcommand_libcamera.format(
+        width, height, FPS, bitrate, remoteIP, port, quality)
+    print(command)
+    os.system(command)
