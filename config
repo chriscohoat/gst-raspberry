@@ -1,37 +1,28 @@
 # Remote Public IP Address
-
-rpi4.local
+rpi.local
 
 # Port
-
 5000
 
 # Protocol (UDP / TCP)
-
 UDP
 
 # Receiver OS (Windows / Linux)
-
 Linux
 
 ## SENDER ONLY ---------------------------
 
 # Height
-
 1000
 
 # Width
-
 500
 
 # FPS
-
 30
 
 # Bitrate
-
 50000000
 
 # Quality (10 - 40)
-
 10
